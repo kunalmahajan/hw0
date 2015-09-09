@@ -11,7 +11,7 @@ try:
 		if header == "CATEGORY NAME":
 			column_index = i
 	for row in reader:
-		if comparison_string in row[column_index].lower():
+		if comparison_string == row[column_index].lower():
 			num_records += 1
 	print "Number of records = %d" % num_records
 finally:
